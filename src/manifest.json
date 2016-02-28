@@ -1,0 +1,32 @@
+{
+  "name": "Speedy Hacker News",
+  "version": "2.0",
+  "manifest_version": 2,
+  "description": "Display the top stories from Hacker News on the speed dial",
+
+  "developer": {
+	   "name": "Ramkumar Shankar",
+	    "url": "http://www.ramkumar.me"
+  },
+
+  "icons": {
+  	"16": "images/icon16.png",
+  	"48": "images/icon128.png",
+  	"128": "images/icon128.png"
+  },
+
+  "background": {
+		"page": "speeddial.html"
+	},
+
+	"permissions": [
+    "speeddial",
+    "https://hacker-news.firebaseio.com/v0/"
+  ],
+
+  "speeddial": {
+		"title": "Hacker News",
+		"url": "http://news.ycombinator.com",
+		"size_mode": "auto_zoom"
+	}
+}

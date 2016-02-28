@@ -1,0 +1,11 @@
+# Binaries
+*.nex
+
+# Certificates
+*.pem
+
+# Sketch source
+*.sketch
+
+# Mac
+*.DS_Store
