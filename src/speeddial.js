@@ -57,13 +57,7 @@ window.addEventListener('load', function () {
     function updateDisplay(i) {
       var index = (i||0) % dataItems.length;
       var next = index + 1;
-      if (dataItems[index].title.length <= 70) {
-        document.getElementById('title').textContent = dataItems[index].title;
-      }
-      else {
-        document.getElementById('title').textContent = dataItems[index].title.substring(0, 70) + '...';
-      }
-
+      document.getElementById('title').textContent = dataItems[index].title;
       opr.speeddial.update({
         url: dataItems[index].url,
       });
